@@ -33,7 +33,7 @@ class NavBar extends Component {
                     <nav>
                         <ul style={ul}>
 
-                            <li style={li}><a href="articles.html" style={a}>Search</a></li>
+                            <li style={li}><a href="#" style={a}>Search</a></li>
                             <li style={li}><a href="today.html">Login</a></li>
                             <li style={li}><a href="successes.html">wishlist</a></li>
                             <li style={li}><a href="successes.html">Cart</a></li>
