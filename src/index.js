@@ -1,13 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-
-
+import './index.less';
 import App from './App';
+import "tailwindcss/tailwind.css"
 import reportWebVitals from './reportWebVitals';
 
-
-import './app.less';
 ReactDOM.render(
   <React.StrictMode>
     <App />
