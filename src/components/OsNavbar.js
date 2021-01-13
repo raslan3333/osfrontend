@@ -8,12 +8,12 @@ import OsSearch from "./OsSearch";
 const OsNavbar = () => {
     return (
 
-        <div className='flex justify-between'>
+        <div className='flex justify-between w-full '>
             <div className="flex font-bold gap-0 text-xl h-5 p-2">
                 <div className="box-content text-blue-500 text-xl">Online</div>
                 <div className="box-content text-green-400 text-xl">Shop</div>
             </div>
-            <div className="w-1/2 min-w-max">
+            <div className="w-1/2 ">
                 <OsSearch />
             </div>
 
