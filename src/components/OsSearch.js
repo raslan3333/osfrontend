@@ -1,65 +1,28 @@
-import React, { useState } from 'react';
-import { Input, AutoComplete } from 'antd';
+import React from 'react';
+import Search from "./iconcomponents/outline/Search";
 
 function getRandomInt(max, min = 0) {
     return Math.floor(Math.random() * (max - min + 1)) + min; // eslint-disable-line no-mixed-operators
 }
 
-const searchResult = (query) => {
-    return new Array(getRandomInt(5))
-        .join('.')
-        .split('.')
-        .map((_, idx) => {
-            const category = `${query}${idx}`;
-            return {
-                value: category,
-                label: (
-                    <div
-                        style={{
-                            display: 'flex',
-                            justifyContent: 'space-between',
-                        }}
-                    >
-            <span>
-              Found {query} on{' '}
-                <a
-                    href={`https://s.taobao.com/search?q=${query}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                {category}
-              </a>
-            </span>
-                        <span>{getRandomInt(200, 100)} results</span>
-                    </div>
-                ),
-            };
-        });
-};
 
 const OsSearch = () => {
-    const [options, setOptions] = useState([]);
-
-    const handleSearch = (value) => {
-        setOptions(value ? searchResult(value) : []);
-    };
-
-    const onSelect = (value) => {
-        console.log('onSelect', value);
-    };
 
     return (
-        <AutoComplete
-            dropdownMatchSelectWidth={252}
-            style={{
-                width: 300,
-            }}
-            options={options}
-            onSelect={onSelect}
-            onSearch={handleSearch}
-        >
-            <Input.Search size="large" placeholder="input here" enterButton />
-        </AutoComplete>
+
+        <div className='flex justify-between border border-blue-500  rounded-full p-1'>
+            <div className='flex bg-blue-500 rounded-full h-8 w-8 justify-center items-center'>
+                <div className='w-6 text-white'>
+                    <Search width='21' stroke='white' height='21' />
+
+                </div>
+            </div>
+            <input type="text" className='rounded-2xl flex-grow p-1 h-8 '/>
+            <div className='flex bg-green-400 rounded-full h-8 w-24 justify-center items-center'>
+                <div className=' font-semibold text-white'>Categories</div>
+            </div>
+
+        </div>
     );
 };
 

@@ -1,33 +1,29 @@
-import {Breadcrumb, Button, Checkbox, Col, Form, Input, Layout, Row} from "antd";
-import {LockOutlined, UserOutlined} from '@ant-design/icons';
+
+
 import OsNavbar from "./components/OsNavbar";
-import illustration from './Illustration.png';
+
 import OsContent from "./components/OsContent";
 import OsFooter from "./components/OsFooter";
-const {Header, Content, Footer} = Layout;
+import React from "react";
+import {Layout} from "antd";
+
 
 function App() {
     return (
-        <div className="App bg-white">
-            <Layout className="layout bg-white flex flex-col h-screen justify-between">
+        <div className="App bg-white ">
+
                 <div className="flex justify-center border-b-2 border-blue-500 p-3.5 " >
-                    <header className='w-screen lg:max-w-screen-2xl' >
+                    <header className='w-screen' >
                         <OsNavbar />
                     </header>
                 </div>
-                <div className="flex justify-center" >
-                    <Content className='w-screen lg:max-w-screen-2xl'>
-                        <div className='container' >
-                            <OsContent/>
-                        </div>
-                    </Content>
+                <div className="flex justify-center " >
+                    <div className=' lg:max-w-screen-2xl' >
+                        <OsContent className=""/>
+                    </div>
+
                 </div>
-                <div className="flex justify-center" >
-                    <Footer className='w-screen lg:max-w-screen-2xl' >
-                        <OsFooter/>
-                    </Footer>
-                </div>
-            </Layout>
+            <OsFooter/>
         </div>
     );
 }

@@ -23,6 +23,7 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
+    "svgr": "npx @svgr/cli --icon --replace-attr-values \"#4A5568=currentColor\" src/icons --out-dir src/components/iconComponents --ignore-existing",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
