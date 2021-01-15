@@ -10,8 +10,8 @@ const OsSearch = () => {
 
     return (
 
-        <div className='flex justify-between border border-blue-500  rounded-full p-1'>
-            <div className='flex bg-blue-500 rounded-full h-8 w-8 justify-center items-center'>
+        <div className='flex justify-between border border-blue-400  rounded-full p-1'>
+            <div className='flex bg-blue-400 rounded-full h-8 w-8 justify-center items-center'>
                 <div className='w-6 text-white'>
                     <Search width='21' stroke='white' height='21' />
 

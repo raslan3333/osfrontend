@@ -10,13 +10,13 @@ import {Layout} from "antd";
 
 function App() {
     return (
-        <div className="App bg-white min-h-screen flex flex-col">
-                <div className=" w-full bg-white fixed border-b-2 border-blue-500 p-3.5 b-shadow" >
+        <div className="App bg-white min-h-screen flex flex-col bg-blueGray-50">
+                <div className=" w-full z-50 bg-white fixed border-b-2 border-blue-500 p-3.5 b-shadow" >
                     <header>
                         <OsNavbar />
                     </header>
                 </div>
-                <div className="flex mt-6 justify-center flex-grow" >
+                <div className="flex mt-6 justify-center flex-grow z-0" >
                     <div className=' lg:max-w-screen-2xl' >
                         <OsContent className=""/>
                     </div>
