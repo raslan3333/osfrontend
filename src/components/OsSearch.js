@@ -17,7 +17,7 @@ const OsSearch = () => {
 
                 </div>
             </div>
-            <input type="text" className='rounded-2xl flex-grow p-1 h-8 '/>
+            <input type="text" className='rounded-2xl flex-grow p-1 h-8 outline-none'/>
             <div className='flex bg-green-400 rounded-full h-8 w-24 justify-center items-center'>
                 <div className=' font-semibold text-white'>Categories</div>
             </div>

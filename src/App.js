@@ -5,7 +5,7 @@ import OsNavbar from "./components/OsNavbar";
 import OsContent from "./components/OsContent";
 import OsFooter from "./components/OsFooter";
 import React from "react";
-import {Layout} from "antd";
+
 
 
 function App() {
