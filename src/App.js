@@ -11,17 +11,17 @@ import React from "react";
 function App() {
     return (
         <div className="App bg-white min-h-screen flex flex-col bg-blueGray-50">
-                <div className=" w-full z-50 bg-white fixed border-b-2 border-blue-500 p-3.5 b-shadow" >
+                <div className=" w-full z-50 bg-white fixed  p-3.5 b-shadow" >
                     <header>
                         <OsNavbar />
                     </header>
                 </div>
-                <div className="flex mt-6 justify-center flex-grow z-0" >
-                    <div className=' lg:max-w-screen-2xl' >
-                        <OsContent className=""/>
+
+                    <div className="mt-6 flex-grow" >
+                        <OsContent className="max-w-screen-2xl mt-6 z-0"/>
+
                     </div>
 
-                </div>
             <footer className=" ">
                 <OsFooter />
             </footer>

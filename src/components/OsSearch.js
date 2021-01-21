@@ -10,15 +10,14 @@ const OsSearch = () => {
 
     return (
 
-        <div className='flex justify-between border border-blue-400  rounded-full p-1'>
+        <div className='flex justify-between border border-blue-400 rounded-full p-1'>
             <div className='flex bg-blue-400 rounded-full h-8 w-8 justify-center items-center'>
                 <div className='w-6 text-white'>
                     <Search width='21' stroke='white' height='21' />
-
                 </div>
             </div>
-            <input type="text" className='rounded-2xl flex-grow p-1 h-8 outline-none'/>
-            <div className='flex bg-green-400 rounded-full h-8 w-24 justify-center items-center'>
+            <input type="text" className='rounded-2xl w-24 sm:flex-grow p-1 h-8 outline-none'/>
+            <div className=' bg-emerald-400 rounded-full h-8 w-24 justify-center items-center hidden sm:inline-flex'>
                 <div className=' font-semibold text-white'>Categories</div>
             </div>
 
