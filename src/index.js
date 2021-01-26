@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.less';
 import App from './App';
 import "tailwindcss/tailwind.css"
+
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

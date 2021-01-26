@@ -16,8 +16,8 @@ const OsSearch = () => {
                     <Search width='21' stroke='white' height='21' />
                 </div>
             </div>
-            <input type="text" className='rounded-2xl w-24 sm:flex-grow p-1 h-8 outline-none'/>
-            <div className=' bg-emerald-400 rounded-full h-8 w-24 justify-center items-center hidden sm:inline-flex'>
+            <input type="text" className='rounded-2xl w-24 flex-grow p-1 h-8 outline-none'/>
+            <div className=' bg-emerald-400 rounded-full h-8 w-24 justify-center items-center inline-flex'>
                 <div className=' font-semibold text-white'>Categories</div>
             </div>
 

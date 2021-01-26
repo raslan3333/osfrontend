@@ -4,7 +4,9 @@ module.exports = {
     darkMode: false, // or 'media' or 'class'
     theme: {
         colors,
+
         extend: {
+
             minWidth: {
                 '0': '0',
                 '1/4': '25%',
@@ -19,10 +21,13 @@ module.exports = {
         },
     },
     variants: {
-        extend: {},
+        extend: {
+            backgroundColor: ['group-focus'],
+        },
     },
     plugins: [
         require('@tailwindcss/aspect-ratio'),
 
     ],
 }
+
